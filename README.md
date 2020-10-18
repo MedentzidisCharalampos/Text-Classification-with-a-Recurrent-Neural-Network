@@ -28,9 +28,13 @@ Build a tf.keras.Sequential model and start with an embedding layer.
 Note: This index-lookup is much more efficient than the equivalent operation of passing a one-hot encoded vector through a tf.keras.layers.Dense layer.
 
 2. A recurrent neural network (RNN) processes sequence input by iterating through the elements. RNNs pass the outputs from one timestep to their input—and then to the next.
-The tf.keras.layers.Bidirectional wrapper can also be used with an RNN layer. This propagates the input forward and backwards through the RNN layer and then concatenates the output. This helps the RNN to learn long range dependencies.
+Note: The tf.keras.layers.Bidirectional wrapper can also be used with an RNN layer. This propagates the input forward and backwards through the RNN layer and then concatenates the output. This helps the RNN to learn long range dependencies.
 
+3. The fixed-length output vector is piped through a fully-connected (Dense) layer with 16 hidden units.
 
+4. The last layer is densely connected with a single output node.
+
+Compile and train the model using the Adam optimizer and BinaryCrossentropy loss.
 
 
 
