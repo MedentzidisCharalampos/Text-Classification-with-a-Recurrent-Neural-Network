@@ -36,8 +36,9 @@ Note: The tf.keras.layers.Bidirectional wrapper can also be used with an RNN lay
 
 Compile and train the model using the Adam optimizer and BinaryCrossentropy loss.
 # Results
-![alt text](https://github.com/MedentzidisCharalampos/Text-Classification-with-a-Recurrent-Neural-Network/blob/main/accuracy1lstm.png "Accuracy and Validation Accuracy")
-![alt text](https://github.com/MedentzidisCharalampos/Text-Classification-with-a-Recurrent-Neural-Network/blob/main/Loss_epochs_first_model.png "Loss and Validation Loss")
+"Accuracy and Validation Accuracy"   "Loss and Validation Loss"
+![alt text](https://github.com/MedentzidisCharalampos/Text-Classification-with-a-Recurrent-Neural-Network/blob/main/accuracy1lstm.png )
+![alt text](https://github.com/MedentzidisCharalampos/Text-Classification-with-a-Recurrent-Neural-Network/blob/main/Loss_epochs_first_model.png )
 
 # Stack Two LSTM Layers
 We examine another architecture of the model.
