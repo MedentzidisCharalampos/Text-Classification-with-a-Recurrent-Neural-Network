@@ -36,5 +36,11 @@ Note: The tf.keras.layers.Bidirectional wrapper can also be used with an RNN lay
 
 Compile and train the model using the Adam optimizer and BinaryCrossentropy loss.
 
+# Stack Two LSTM Layers
+We examine another architecture of the model.
+Keras recurrent layers have two available modes that are controlled by the return_sequences constructor argument:
 
+1. Return either the full sequences of successive outputs for each timestep (a 3D tensor of shape (batch_size, timesteps, output_features)).
+2. Return only the last output for each input sequence (a 2D tensor of shape (batch_size, output_features)).
 
+This architecture follows the last choice in order to stack two  LSTM Layers.  
