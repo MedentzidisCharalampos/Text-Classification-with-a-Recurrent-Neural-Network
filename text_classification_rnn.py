@@ -104,10 +104,13 @@ history = model.fit(train_dataset, epochs=10,
                     validation_data=test_dataset,
                     validation_steps=30)
 
+#loss: 0.1126 - accuracy: 0.9626 - val_loss: 0.4225 - val_accuracy: 0.8469
 test_loss, test_acc = model.evaluate(test_dataset)
 
 print('Test Loss: {}'.format(test_loss))
 print('Test Accuracy: {}'.format(test_acc))
+
+#loss: 0.4171 - accuracy: 0.8455
 
 #The above model does not mask the padding applied to the sequences.
 # This can lead to skew if trained on padded sequences and test on un-padded sequences.
@@ -135,6 +138,7 @@ sample_pred_text = ('The movie was cool. The animation and the graphics '
                     'were out of this world. I would recommend this movie.')
 predictions = sample_predict(sample_pred_text, pad=False)
 print(predictions)
+#[[0.07037611]]
 
 # predict on a sample text with padding
 
@@ -142,6 +146,7 @@ sample_pred_text = ('The movie was cool. The animation and the graphics '
                     'were out of this world. I would recommend this movie.')
 predictions = sample_predict(sample_pred_text, pad=True)
 print(predictions)
+#[[-0.26897871]]
 
 plot_graphs(history, 'accuracy')
 
