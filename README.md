@@ -35,7 +35,7 @@ Note: The tf.keras.layers.Bidirectional wrapper can also be used with an RNN lay
 4. The last layer is densely connected with a single output node.
 
 Compile and train the model using the Adam optimizer and BinaryCrossentropy loss.
-!(https://github.com/MedentzidisCharalampos/Text-Classification-with-a-Recurrent-Neural-Network/blob/main/accuracy1lstm.png)
+![alt text](https://github.com/MedentzidisCharalampos/Text-Classification-with-a-Recurrent-Neural-Network/blob/main/accuracy1lstm.png)
 # Stack Two LSTM Layers
 We examine another architecture of the model.
 Keras recurrent layers have two available modes that are controlled by the return_sequences constructor argument:
