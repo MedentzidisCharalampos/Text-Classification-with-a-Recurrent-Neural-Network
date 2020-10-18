@@ -38,6 +38,7 @@ Compile and train the model using the Adam optimizer and BinaryCrossentropy loss
 # Results
 
 | Accuracy and Validation Accuracy      | Loss and Validation Loss      |
+|-----------------------------------------------------------|-----------------------------------------------------------|
 
 | <img src="https://github.com/MedentzidisCharalampos/Text-Classification-with-a-Recurrent-Neural-Network/blob/main/accuracy1lstm.png" > |
 <img src="https://github.com/MedentzidisCharalampos/Text-Classification-with-a-Recurrent-Neural-Network/blob/main/Loss_epochs_first_model.png"> |
