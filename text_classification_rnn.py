@@ -175,10 +175,14 @@ history = model.fit(train_dataset, epochs=10,
                     validation_data=test_dataset,
                     validation_steps=30)
 
+#loss: 0.0948 - accuracy: 0.9764 - val_loss: 0.5652 - val_accuracy: 0.8505
+
 test_loss, test_acc = model.evaluate(test_dataset)
 
 print('Test Loss: {}'.format(test_loss))
 print('Test Accuracy: {}'.format(test_acc))
+
+#loss: 0.5370 - accuracy: 0.8510
 
 # predict on a sample text without padding.
 
@@ -187,12 +191,16 @@ sample_pred_text = ('The movie was not good. The animation and the graphics '
 predictions = sample_predict(sample_pred_text, pad=False)
 print(predictions)
 
+#[[-2.3630884]]
+
 # predict on a sample text with padding
 
 sample_pred_text = ('The movie was not good. The animation and the graphics '
                     'were terrible. I would not recommend this movie.')
 predictions = sample_predict(sample_pred_text, pad=True)
 print(predictions)
+
+#[[-2.690089]]
 
 plot_graphs(history, 'accuracy')
 
