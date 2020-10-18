@@ -20,7 +20,17 @@ Encoded string is [4025, 222, 6307, 2327, 4043, 2120, 7975]
 2120 ----> ow  
 7975 ----> .  
 
-Create batches of these encoded strings. Use the padded_batch method to zero-pad the sequences to the length of the longest string in the batch:
+Create batches of these encoded strings. Use the padded_batch method to zero-pad the sequences to the length of the longest string in the batch.
+
+# Create the model
+Build a tf.keras.Sequential model and start with an embedding layer.
+1. An embedding layer stores one vector per word. When called, it converts the sequences of word indices to sequences of vectors. These vectors are trainable. After training (on enough data), words with similar meanings often have similar vectors.  
+Note: This index-lookup is much more efficient than the equivalent operation of passing a one-hot encoded vector through a tf.keras.layers.Dense layer.
+
+2. A recurrent neural network (RNN) processes sequence input by iterating through the elements. RNNs pass the outputs from one timestep to their input—and then to the next.
+The tf.keras.layers.Bidirectional wrapper can also be used with an RNN layer. This propagates the input forward and backwards through the RNN layer and then concatenates the output. This helps the RNN to learn long range dependencies.
+
+
 
 
 
