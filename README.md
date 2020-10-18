@@ -43,4 +43,4 @@ Keras recurrent layers have two available modes that are controlled by the retur
 1. Return either the full sequences of successive outputs for each timestep (a 3D tensor of shape (batch_size, timesteps, output_features)).
 2. Return only the last output for each input sequence (a 2D tensor of shape (batch_size, output_features)).
 
-This architecture follows the last choice in order to stack two  LSTM Layers.  
+This architecture follows the first model in order to stack two  LSTM Layers.  
