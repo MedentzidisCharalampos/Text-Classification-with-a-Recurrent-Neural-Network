@@ -43,6 +43,12 @@ Compile and train the model using the Adam optimizer and BinaryCrossentropy loss
 <img src="https://github.com/MedentzidisCharalampos/Text-Classification-with-a-Recurrent-Neural-Network/blob/main/accuracy1lstm.png" > 
 <img src="https://github.com/MedentzidisCharalampos/Text-Classification-with-a-Recurrent-Neural-Network/blob/main/Loss_epochs_first_model.png"> 
 
+| col 1      | col 2      |
+|------------|-------------|
+| <img src="https://media.wired.com/photos/5926db217034dc5f91becd6b/master/w_582,c_limit/so-logo-s.jpg" width="250"> | <img src="https://mk0jobadderjftub56m0.kinstacdn.com/wp-content/uploads/stackoverflow.com-300.jpg" width="250"> |
+
+
+
 # Stack Two LSTM Layers
 We examine another architecture of the model.
 Keras recurrent layers have two available modes that are controlled by the return_sequences constructor argument:
