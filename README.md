@@ -51,3 +51,8 @@ Keras recurrent layers have two available modes that are controlled by the retur
 2. Return only the last output for each input sequence (a 2D tensor of shape (batch_size, output_features)).
 
 This architecture follows the first model in order to stack two  LSTM Layers.  
+
+| Accuracy and Validation Accuracy      | Loss and Validation Loss     |
+|------------|-------------|
+| <img src="https://github.com/MedentzidisCharalampos/Text-Classification-with-a-Recurrent-Neural-Network/blob/main/accuracy_first_model.png" > | <img src="https://github.com/MedentzidisCharalampos/Text-Classification-with-a-Recurrent-Neural-Network/blob/main/loss_second_model.png"> 
+ 
